@@ -4,84 +4,52 @@ A lightweight Bash script to quickly and securely install Visual Studio Code on 
 
 ## 📖 Overview
 
-Manually setting up GPG keys and repository lists can be tedious and prone to errors. This script automates the entire process, ensuring you get the official version of VS Code that stays updated through your system's package manager (`sudo apt upgrade`). This method provides a more integrated experience compared to containerized solutions like Snap.
+This repository contains a simple Bash script designed to automate the installation of Visual Studio Code. Manually setting up GPG keys and repository lists can be tedious. This script handles the entire process, ensuring you get the official version of VS Code that stays updated through your system's package manager (`sudo apt upgrade`). This method provides a more integrated experience compared to containerized solutions like Snap.
 
 ## ✨ Features
 
--   **Official Source**: Adds Microsoft's official repository for security and stability.
--   **Universal Architecture**: Automatically supports `amd64`, `arm64`, and `armhf` architectures.
+-   **Official Source**: The script adds Microsoft's official repository for security and stability.
+-   **Universal Architecture**: Automatically configures the repository to support `amd64`, `arm64`, and `armhf` architectures.
 -   **Automatic Updates**: Integrates seamlessly with `apt` so your editor stays current with regular system updates.
--   **One-Command Setup**: No need to manually download `.deb` files or configure repositories.
--   **Debian & Ubuntu Compatible**: Works on both Debian-based systems and their derivatives.
+-   **One-Command Setup**: Simplifies the installation process – no need to manually download `.deb` files or configure repositories.
+-   **Debian & Ubuntu Compatible**: The script is designed to work on both Debian-based systems and their derivatives.
 
-## 🛠️ Installation & Usage
+## 🛠️ How to Use (Installation)
 
-Follow these steps to get VS Code installed on your system using this script.
+To install Visual Studio Code using the script in this repository, follow these steps:
 
-### 1. Clone the repository (or create the file directly)
+### 1. Clone the repository
+
+First, clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 ```
 
-Alternatively, you can just create a file named `install_vscode.sh` and paste the script content below.
+**(Note: Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with the actual path to your repository.)**
 
-### 2. The Installation Script
+### 2. Make the script executable
 
-Copy the following content into a file named `install_vscode.sh`:
-
-```bash
-#!/bin/bash
-
-# Exit immediately if a command exits with a non-zero status.
-set -e
-
-echo "Starting Visual Studio Code installation..."
-
-# 1. Update package index and install dependencies
-echo "1/4: Updating system and installing necessary dependencies..."
-sudo apt update
-sudo apt install -y software-properties-common apt-transport-https wget gpg
-
-# 2. Import the Microsoft GPG key for security
-# This key allows Ubuntu/Debian to verify that the software you are downloading is authentic.
-echo "2/4: Importing Microsoft GPG key..."
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/packages.microsoft.gpg > /dev/null
-
-# 3. Add the official VS Code repository to apt sources
-# This tells your system where to find the VS Code packages.
-echo "3/4: Adding VS Code repository to your system's sources..."
-echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-
-# 4. Install Visual Studio Code
-echo "4/4: Refreshing package list and installing Visual Studio Code..."
-sudo apt update
-sudo apt install -y code
-
-echo "✅ Visual Studio Code installation complete!"
-echo "You can launch VS Code by typing 'code' in your terminal or by finding it in your application menu."
-```
-
-### 3. Make the script executable
-
-Navigate to the directory where you saved `install_vscode.sh` and run:
+The installation logic is contained within the `install_vscode.sh` file. You need to grant it execution permissions:
 
 ```bash
 chmod +x install_vscode.sh
 ```
 
-### 4. Run the script
+### 3. Run the script
+
+Finally, execute the script from your terminal:
 
 ```bash
 ./install_vscode.sh
 ```
 
-The script will handle all necessary steps automatically.
+The script will handle all necessary steps automatically, including updating your package list, installing dependencies, importing the GPG key, adding the repository, and installing VS Code.
 
 ## 🚀 Launching VS Code
 
-Once the installation finishes, you can launch VS Code:
+Once the script finishes the installation, you can launch Visual Studio Code:
 
 -   From your application menu.
 -   By typing `code` in your terminal:
@@ -91,7 +59,7 @@ Once the installation finishes, you can launch VS Code:
 
 ## 🔍 Why use `apt` instead of `snap`?
 
-While Ubuntu often suggests `snap install code`, using the `apt` method provided here offers several advantages:
+While Ubuntu often suggests `snap install code`, the `apt` method (which this script uses) offers several advantages:
 
 -   **Better Integration**: `apt` installations generally integrate better with the host system, accessing system fonts, keyrings, and terminal tools more reliably.
 -   **Performance**: Many users report faster startup times and lower resource usage compared to containerized Snap versions.
@@ -102,11 +70,11 @@ While Ubuntu often suggests `snap install code`, using the `apt` method provided
 
 -   **Operating System**: Ubuntu 20.04+ or Debian 11+ (and their derivatives).
 -   **Privileges**: `sudo` access is required to add repositories and install packages.
--   **Dependencies**: The script will automatically ensure `wget`, `gpg`, and `apt-transport-https` are installed.
+-   **Dependencies**: The script will automatically ensure `wget`, `gpg`, and `apt-transport-https` are installed if they are not already present.
 
 ## 📘 Troubleshooting for Debian
 
-If you are on a fresh Debian install and encounter a `sudo: command not found` error, it means `sudo` is not yet configured for your user. You'll need to install it and add your user to the `sudo` group first.
+If you are on a fresh Debian install and encounter a `sudo: command not found` error when running the script, it means `sudo` is not yet configured for your user. You'll need to install it and add your user to the `sudo` group first.
 
 1.  Switch to the root user:
     ```bash
@@ -119,7 +87,7 @@ If you are on a fresh Debian install and encounter a `sudo: command not found` e
     ```
     (Replace `your_username` with your actual username.)
 3.  Log out and log back in for the changes to take effect.
-4.  Then, you can run the `install_vscode.sh` script as described above.
+4.  Then, you can proceed with running the `install_vscode.sh` script as described above.
 
 For more details, visit the [Official VS Code Linux Documentation](https://code.visualstudio.com/docs/setup/linux).
 
