@@ -9,14 +9,17 @@ This script automates the quick and secure installation of Visual Studio Code. M
 ## 🛠️ How to Use (Installation)
 
 To install Visual Studio Code with a single command, simply run one of the following in your terminal:
+Enter your Login Password to continue installation smoothly.
 
 **For Ubuntu and derivatives:**
 ```bash
+sudo apt install curl -y
 curl -fsSL https://is.gd/vscodeubuntu | sudo sh
 ```
 
 **For Debian and derivatives:**
 ```bash
+sudo apt install curl -y
 curl -fsSL https://is.gd/vscodedebian | sudo sh
 ```
 
