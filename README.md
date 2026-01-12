@@ -6,6 +6,13 @@ A lightweight Bash script to quickly and securely install Visual Studio Code on 
 
 This repository contains a simple Bash script designed to automate the installation of Visual Studio Code. Manually setting up GPG keys and repository lists can be tedious. This script handles the entire process, ensuring you get the official version of VS Code that stays updated through your system's package manager (`sudo apt upgrade`). This method provides a more integrated experience compared to containerized solutions like Snap.
 
+
+Shortened URL	Original URL	Created	Statistics
+https://is.gd/vscodeubuntu
+
+https://raw.githubusercontent.com/pinakdhabu2005/debvscode/refs/heads/main/ubunt
+u.sh
+
 ## ✨ Features
 
 -   **Official Source**: The script adds Microsoft's official repository for security and stability.
