@@ -10,8 +10,10 @@ This repository contains a simple Bash script designed to automate the installat
 Shortened URL	Original URL	Created	Statistics
 https://is.gd/vscodeubuntu
 
-https://raw.githubusercontent.com/pinakdhabu2005/debvscode/refs/heads/main/ubunt
-u.sh
+https://raw.githubusercontent.com/pinakdhabu2005/debvscode/refs/heads/main/ubuntu.sh
+
+
+https://is.gd/vscodedebian
 
 ## ✨ Features
 
