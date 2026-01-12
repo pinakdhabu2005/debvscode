@@ -4,16 +4,23 @@ A lightweight Bash script to quickly and securely install Visual Studio Code on 
 
 ## 📖 Overview
 
-This repository contains a simple Bash script designed to automate the installation of Visual Studio Code. Manually setting up GPG keys and repository lists can be tedious. This script handles the entire process, ensuring you get the official version of VS Code that stays updated through your system's package manager (`sudo apt upgrade`). This method provides a more integrated experience compared to containerized solutions like Snap.
+This script automates the quick and secure installation of Visual Studio Code. Manually setting up GPG keys and repository lists can be tedious. This script handles the entire process, ensuring you get the official version of VS Code that stays updated through your system's package manager (`sudo apt upgrade`). This method provides a more integrated experience compared to containerized solutions like Snap.
 
+## 🛠️ How to Use (Installation)
 
-Shortened URL	Original URL	Created	Statistics
-https://is.gd/vscodeubuntu
+To install Visual Studio Code with a single command, simply run one of the following in your terminal:
 
-https://raw.githubusercontent.com/pinakdhabu2005/debvscode/refs/heads/main/ubuntu.sh
+**For Ubuntu and derivatives:**
+```bash
+curl -fsSL https://is.gd/vscodeubuntu | sudo sh
+```
 
+**For Debian and derivatives:**
+```bash
+curl -fsSL https://is.gd/vscodedebian | sudo sh
+```
 
-https://is.gd/vscodedebian
+Both commands download and execute the same script directly with `sudo` privileges. The script will handle all necessary steps automatically, including updating your package list, installing dependencies, importing the GPG key, adding the repository, and installing VS Code.
 
 ## ✨ Features
 
@@ -22,39 +29,6 @@ https://is.gd/vscodedebian
 -   **Automatic Updates**: Integrates seamlessly with `apt` so your editor stays current with regular system updates.
 -   **One-Command Setup**: Simplifies the installation process – no need to manually download `.deb` files or configure repositories.
 -   **Debian & Ubuntu Compatible**: The script is designed to work on both Debian-based systems and their derivatives.
-
-## 🛠️ How to Use (Installation)
-
-To install Visual Studio Code using the script in this repository, follow these steps:
-
-### 1. Clone the repository
-
-First, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
-```
-
-**(Note: Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with the actual path to your repository.)**
-
-### 2. Make the script executable
-
-The installation logic is contained within the `install_vscode.sh` file. You need to grant it execution permissions:
-
-```bash
-chmod +x install_vscode.sh
-```
-
-### 3. Run the script
-
-Finally, execute the script from your terminal:
-
-```bash
-./install_vscode.sh
-```
-
-The script will handle all necessary steps automatically, including updating your package list, installing dependencies, importing the GPG key, adding the repository, and installing VS Code.
 
 ## 🚀 Launching VS Code
 
@@ -96,7 +70,7 @@ If you are on a fresh Debian install and encounter a `sudo: command not found` e
     ```
     (Replace `your_username` with your actual username.)
 3.  Log out and log back in for the changes to take effect.
-4.  Then, you can proceed with running the `install_vscode.sh` script as described above.
+4.  Then, you can proceed with running the `curl` command as described above.
 
 For more details, visit the [Official VS Code Linux Documentation](https://code.visualstudio.com/docs/setup/linux).
 
