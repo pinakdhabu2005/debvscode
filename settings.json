@@ -1,0 +1,241 @@
+{
+    "editor": {
+        "copyWithSyntaxHighlighting": false,
+        "emptySelectionClipboard": false,
+        "multiCursorModifier": "ctrlCmd",
+        "snippetSuggestions": "top",
+        "detectIndentation": false,
+        "lineNumbers": "on",
+        "fontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Menlo', 'Consolas', 'Monaco', 'Courier New', monospace",
+        "fontSize": 16,
+        "lineHeight": 32,
+        "fontLigatures": true,
+        "tabSize": 4,
+        "autoIndent": "full",
+        "formatOnSave": true,
+        "formatOnSaveTimeout": 750,
+        "formatOnPaste": true,
+        "wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+        "linkedEditing": true,
+        "colorDecorators": true,
+        "renderLineHighlight": "none",
+        "renderWhitespace": "none",
+        "renderControlCharacters": true,
+        "selectionHighlight": false,
+        "occurrencesHighlight": "off",
+        "overviewRulerBorder": true,
+        "hideCursorInOverviewRuler": true,
+        "semanticHighlighting.enabled": true,
+        "rulers": [
+            80,
+            120
+        ],
+        "minimap": {
+            "enabled": false
+        },
+        "guides": {
+            "indentation": true,
+            "bracketPairs": true,
+            "bracketPairsHorizontal": true
+        },
+        "hover": {
+            "delay": 1500,
+            "enabled": true
+        },
+        "quickSuggestions": {
+            "strings": true
+        },
+        "scrollbar": {
+            "verticalScrollbarSize": 5,
+            "horizontalScrollbarSize": 5,
+            "vertical": "hidden"
+        },
+        "cursorStyle": "line-thin",
+        "cursorBlinking": "smooth",
+        "cursorSmoothCaretAnimation": "on",
+        "smoothScrolling": true,
+        "codeLensFontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Consolas', monospace",
+        "inlayHints.fontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Consolas', monospace",
+        "inlineSuggest.fontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Consolas', monospace",
+        "tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "keyword",
+                        "variable.language",
+                        "entity.other.attribute-name.html",
+                        "entity.other.attribute-name",
+                        "keyword.control",
+                        "storage.type",
+                        "comment.block",
+                        "comment.line"
+                    ]
+                }
+            ]
+        },
+        "semanticTokenColorCustomizations": {
+            "enabled": true,
+            "rules": {
+                "variable": {
+                    "foreground": "#9CDCFE"
+                },
+                "variable.readonly": {
+                    "foreground": "#4EC9B0",
+                    "fontStyle": "italic"
+                },
+                "parameter": {
+                    "foreground": "#C586C0"
+                },
+                "property": {
+                    "foreground": "#9CDCFE"
+                },
+                "function": {
+                    "foreground": "#DCDCAA"
+                },
+                "method": {
+                    "foreground": "#DCDCAA"
+                },
+                "keyword": {
+                    "foreground": "#569CD6",
+                    "fontStyle": "bold"
+                },
+                "class": {
+                    "foreground": "#4EC9B0",
+                    "fontStyle": "bold"
+                },
+                "interface": {
+                    "foreground": "#B8D7A3"
+                },
+                "enum": {
+                    "foreground": "#B8D7A3"
+                },
+                "type": {
+                    "foreground": "#4EC9B0"
+                },
+                "string": {
+                    "foreground": "#CE9178"
+                },
+                "number": {
+                    "foreground": "#B5CEA8"
+                },
+                "comment": {
+                    "foreground": "#6A9955",
+                    "fontStyle": "italic"
+                },
+                "regexp": {
+                    "foreground": "#D16969"
+                }
+            }
+        }
+    },
+    "workbench": {
+        "colorTheme": "Visual Studio Dark",
+        "iconTheme": "vs-seti",
+        "startupEditor": "newUntitledFile",
+        "sideBar.location": "right",
+        "activityBar.location": "bottom",
+        "layoutControl.enabled": false,
+        "commandCenter": false,
+        "list.smoothScrolling": true,
+        "tree": {
+            "enableStickyScroll": false,
+            "indent": 15
+        },
+        "editor": {
+            "limit.value": 20,
+            "labelFormat": "short",
+            "empty.hint": "hidden",
+            "showTabs": "multiple"
+        },
+        "colorCustomizations": {
+            "editorError.foreground": "#F44747",
+            "editorError.border": "#F44747",
+            "editorWarning.foreground": "#FF8800",
+            "editorWarning.border": "#FF8C00",
+            "editorInfo.foreground": "#9CDCFE",
+            "editorHint.foreground": "#D7BA7D",
+            "editorGutter.modifiedBackground": "#D7BA7D",
+            "editorGutter.addedBackground": "#4EC9B0",
+            "editorUnnecessary.foreground": "#7F848E"
+        }
+    },
+    "window": {
+        "newWindowDimensions": "inherit",
+        "nativeFullScreen": true,
+        "titleBarStyle": "custom",
+        "customTitleBarVisibility": "auto",
+        "closeWhenEmpty": false,
+        "restoreWindows": "all",
+        "zoomLevel": 0,
+        "menuBarVisibility": "toggle"
+    },
+    "files": {
+        "trimTrailingWhitespace": true,
+        "insertFinalNewline": true,
+        "trimFinalNewlines": true,
+        "autoSave": "afterDelay",
+        "autoSaveDelay": 1000,
+        "encoding": "utf8",
+        "autoGuessEncoding": true,
+        "associations": {
+            ".php_cs": "php",
+            ".php_cs.dist": "php"
+        },
+        "exclude": {
+            "**/tmp/**": true,
+            "**/node_modules/**": true,
+            "**/vendor/{[^l],?[^ai]}*": true,
+            "**/public/{[^i],?[^n]}*": true,
+            "**/dist": true,
+            "**/_ide_helper.php": true,
+            "**/composer.lock": true,
+            "**/package-lock.json": true,
+            "storage": true,
+            ".phpunit.result.cache": true
+        }
+    },
+    "search": {
+        "useIgnoreFiles": false,
+        "exclude": {
+            "**/*.bundle.js": true,
+            "**/*all.js": true,
+            "**/Library": true,
+            "~/Library**": true
+        }
+    },
+    "explorer": {
+        "compactFolders": false,
+        "decorations.badges": true
+    },
+    "terminal.integrated": {
+        "fontFamily": "Caskaydiacove Nerd Font Mono, 'Cascadia Code', 'Consolas', 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace",
+        "smoothScrolling": true,
+        "hideOnStartup": "always",
+        "cursorBlinking": true,
+        "cursorStyle": "line",
+        "cursorStyleInactive": "line"
+    },
+    "notebook": {
+        "output.wordWrap": true,
+        "output.fontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', monospace",
+        "multiCursor.enabled": true
+    },
+    "debug.console.fontFamily": "Caskaydiacove Nerd Font Mono, 'Cascadia Code', 'Consolas', 'Courier New', monospace",
+    "scm.inputFontFamily": "Caskaydiacove Nerd Font Mono, 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace",
+    "chat.editor.fontFamily": "Caskaydiacove Nerd Font Mono, 'Segoe UI', 'Inter', system-ui",
+    "markdown.preview.fontFamily": "Caskaydiacove Nerd Font Mono, 'Segoe UI', 'Inter', system-ui",
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue-html": "html",
+        "vue": "html",
+        "react": "html",
+        "javascript": "html"
+    },
+    "breadcrumbs.enabled": true,
+    "problems.decorations.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "codeium.enableCodeLens": false,
+    "redhat.telemetry.enabled": true,
+    "editor.hover.enabled": "on"
+}
